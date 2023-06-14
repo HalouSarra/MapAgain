@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/drawerLayout"
+android:fitsSystemWindows="true"
+tools:openDrawer="start"
+tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <fragment  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/contaner"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <SearchView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/localisation"
+            android:elevation="5dp"
+            android:queryHint="search"
+            android:iconifiedByDefault="false"
+            android:background="@drawable/inpute_bg" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/localisation"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottombar" />
+
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:elevation="10dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        tools:targetApi="lollipop">
+
+        <LinearLayout
+            android:id="@+id/layoutmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iconmenu"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_menu_24"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layouthome"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/iconhome"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_home_24"
+                android:adjustViewBounds="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutticket"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+            <ImageView
+                android:id="@+id/iconticket"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_map_24"
+                android:adjustViewBounds="true"/>
+         </LinearLayout>
+
+     </LinearLayout>
+    </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_view"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/menunav"
+            app:itemIconTint="@color/blue1"
+            app:itemTextColor="@color/blue1"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

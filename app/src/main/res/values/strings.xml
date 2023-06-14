@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Map again</string>
+    <string name="open_nav">ouvrir la navigation</string>
+    <string name="close_nav">fermer la navigation</string>
+</resources>
