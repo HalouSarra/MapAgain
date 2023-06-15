@@ -14,7 +14,7 @@ import android.widget.ViewSwitcher;
 
 public class help extends AppCompatActivity {
 
-    private ImageSwitcher imageSwitcher1,imageSwitcher2,imageSwitcher3,imageSwitcher4;
+    private ImageSwitcher imageSwitcher1,imageSwitcher2,imageSwitcher3,imageSwitcher4,imageSwitcher5;
 
     private int[] images1 = {
             R.drawable.p1,
@@ -50,10 +50,18 @@ public class help extends AppCompatActivity {
             R.drawable.p21
     };
 
+    private int[] images5 = {
+            R.drawable.p37,
+            R.drawable.p38,
+            R.drawable.p39,
+            R.drawable.p40
+    };
     private int currentIndex1 = 0;
     private int currentIndex2 = 0;
     private int currentIndex3 = 0;
     private int currentIndex4 = 0;
+
+    private int currentIndex5 = 0;
 
     @SuppressLint("MissingInflatedId")
 
@@ -68,6 +76,8 @@ public class help extends AppCompatActivity {
         imageSwitcher2 = findViewById(R.id.imageSwitcher2);
         imageSwitcher3 = findViewById(R.id.imageSwitcher3);
         imageSwitcher4 = findViewById(R.id.imageSwitcher4);
+        imageSwitcher5 = findViewById(R.id.imageSwitcher5);
+
 
 
 
@@ -199,6 +209,44 @@ public class help extends AppCompatActivity {
                     currentIndex4 = 0;
                 }
                 imageSwitcher4.setImageResource(images4[currentIndex4]);
+            }
+        });
+
+
+
+
+
+
+
+
+        imageSwitcher5.setFactory(new ViewSwitcher.ViewFactory() {
+            @Override
+            public View makeView() {
+                ImageView imageView = new ImageView(getApplicationContext());
+                imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                imageView.setLayoutParams(new ImageSwitcher.LayoutParams(
+                        ImageSwitcher.LayoutParams.MATCH_PARENT,
+                        ImageSwitcher.LayoutParams.MATCH_PARENT
+                ));
+                return imageView;
+            }
+        });
+
+        Animation slideInAnimation5 = AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left);
+        Animation slideOutAnimation5 = AnimationUtils.loadAnimation(this, android.R.anim.slide_out_right);
+        imageSwitcher5.setInAnimation(slideInAnimation5);
+        imageSwitcher5.setOutAnimation(slideOutAnimation5);
+
+        imageSwitcher5.setImageResource(images5[currentIndex5]);
+
+        imageSwitcher5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                currentIndex5++;
+                if (currentIndex5 == images4.length) {
+                    currentIndex5 = 0;
+                }
+                imageSwitcher5.setImageResource(images5[currentIndex5]);
             }
         });
 

@@ -105,15 +105,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ro3" />
 
-                <ImageSwitcher
-                    android:id="@+id/imageSwitchero1"
-                    android:layout_width="match_parent"
-                    android:layout_height="500dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/qo4" />
+    <ImageSwitcher
+        android:id="@+id/imageSwitchero1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qo4" />
 
 
     <TextView
@@ -129,15 +130,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageSwitchero1" />
 
-                <ImageSwitcher
-                    android:id="@+id/imageSwitchero2"
-                    android:layout_width="match_parent"
-                    android:layout_height="500dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/qo5" />
+    <ImageSwitcher
+        android:id="@+id/imageSwitchero2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qo5" />
 
     <TextView
         android:id="@+id/qo6"
@@ -152,17 +154,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageSwitchero2" />
 
-                <ImageSwitcher
-                    android:id="@+id/imageSwitchero3"
-                    android:layout_width="match_parent"
-                    android:layout_height="500dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/qo6"
+    <ImageSwitcher
+        android:id="@+id/imageSwitchero3"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
 
-                    />
+        app:layout_constraintTop_toBottomOf="@+id/qo6" />
 
     <TextView
         android:id="@+id/qo7"
@@ -177,15 +179,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageSwitchero3" />
 
-                <ImageSwitcher
-                    android:id="@+id/imageSwitchero4"
-                    android:layout_width="match_parent"
-                    android:layout_height="500dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/qo7" />
+    <ImageSwitcher
+        android:id="@+id/imageSwitchero4"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qo7" />
 
 
     <TextView
