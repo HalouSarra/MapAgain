@@ -128,7 +128,6 @@
             android:gravity="center"
             android:text="Comment mettre a jour mon profil?"
             android:textColor="@color/blue1"
-
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -146,6 +145,62 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/q5">
 
+        </ImageSwitcher>
+
+        <TextView
+            android:id="@+id/q6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="Où puis-je trouver mes réservations ?"
+            android:textColor="@color/blue1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageSwitcher3" />
+
+        <ImageSwitcher
+            android:id="@+id/imageSwitcher4"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q6">
+        </ImageSwitcher>
+
+        <TextView
+            android:id="@+id/q7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="Comment devenir propriétaire "
+            android:textColor="@color/blue1"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageSwitcher4" />
+
+        <ImageSwitcher
+            android:id="@+id/imageSwitcher5"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/q7">
         </ImageSwitcher>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

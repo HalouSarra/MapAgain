@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 startActivity(new Intent(this, informationsParkings.class));
                 break;
             case R.id.nav_help:
-                startActivity(new Intent(this, help.class));
+                startActivity(new Intent(this, helpOwner.class));
                 break;
             case R.id.nav_info:
                 startActivity(new Intent(this, info.class));
